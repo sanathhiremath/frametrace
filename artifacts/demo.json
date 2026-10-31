@@ -1,0 +1,1003 @@
+{
+  "version": "0.1",
+  "frame_size": {
+    "width": 320,
+    "height": 180
+  },
+  "zone": {
+    "x": 170,
+    "y": 35,
+    "width": 110,
+    "height": 110
+  },
+  "scenarios": [
+    {
+      "id": "interrupted-crossing",
+      "title": "An intrusion hidden by dropped frames",
+      "truth": true,
+      "frames": [
+        {
+          "index": 0,
+          "time_ms": 0,
+          "image": "frames/interrupted-crossing-00.png",
+          "dropped": false,
+          "detections": [
+            {
+              "x": 30,
+              "y": 65,
+              "width": 27,
+              "height": 48,
+              "area": 1296
+            }
+          ],
+          "policies": {
+            "consecutive": false,
+            "window": false
+          }
+        },
+        {
+          "index": 1,
+          "time_ms": 100,
+          "image": "frames/interrupted-crossing-01.png",
+          "dropped": false,
+          "detections": [
+            {
+              "x": 34,
+              "y": 65,
+              "width": 27,
+              "height": 48,
+              "area": 1296
+            }
+          ],
+          "policies": {
+            "consecutive": false,
+            "window": false
+          }
+        },
+        {
+          "index": 2,
+          "time_ms": 200,
+          "image": "frames/interrupted-crossing-02.png",
+          "dropped": false,
+          "detections": [
+            {
+              "x": 194,
+              "y": 65,
+              "width": 27,
+              "height": 48,
+              "area": 1296
+            }
+          ],
+          "policies": {
+            "consecutive": false,
+            "window": false
+          }
+        },
+        {
+          "index": 3,
+          "time_ms": 300,
+          "image": "frames/interrupted-crossing-03.png",
+          "dropped": true,
+          "detections": [],
+          "policies": {
+            "consecutive": false,
+            "window": false
+          }
+        },
+        {
+          "index": 4,
+          "time_ms": 400,
+          "image": "frames/interrupted-crossing-04.png",
+          "dropped": false,
+          "detections": [
+            {
+              "x": 194,
+              "y": 65,
+              "width": 27,
+              "height": 48,
+              "area": 1296
+            }
+          ],
+          "policies": {
+            "consecutive": false,
+            "window": false
+          }
+        },
+        {
+          "index": 5,
+          "time_ms": 500,
+          "image": "frames/interrupted-crossing-05.png",
+          "dropped": true,
+          "detections": [],
+          "policies": {
+            "consecutive": false,
+            "window": false
+          }
+        },
+        {
+          "index": 6,
+          "time_ms": 600,
+          "image": "frames/interrupted-crossing-06.png",
+          "dropped": false,
+          "detections": [
+            {
+              "x": 194,
+              "y": 65,
+              "width": 27,
+              "height": 48,
+              "area": 1296
+            }
+          ],
+          "policies": {
+            "consecutive": false,
+            "window": true
+          }
+        },
+        {
+          "index": 7,
+          "time_ms": 700,
+          "image": "frames/interrupted-crossing-07.png",
+          "dropped": false,
+          "detections": [
+            {
+              "x": 58,
+              "y": 65,
+              "width": 27,
+              "height": 48,
+              "area": 1296
+            }
+          ],
+          "policies": {
+            "consecutive": false,
+            "window": false
+          }
+        },
+        {
+          "index": 8,
+          "time_ms": 800,
+          "image": "frames/interrupted-crossing-08.png",
+          "dropped": false,
+          "detections": [
+            {
+              "x": 62,
+              "y": 65,
+              "width": 27,
+              "height": 48,
+              "area": 1296
+            }
+          ],
+          "policies": {
+            "consecutive": false,
+            "window": false
+          }
+        },
+        {
+          "index": 9,
+          "time_ms": 900,
+          "image": "frames/interrupted-crossing-09.png",
+          "dropped": false,
+          "detections": [
+            {
+              "x": 66,
+              "y": 65,
+              "width": 27,
+              "height": 48,
+              "area": 1296
+            }
+          ],
+          "policies": {
+            "consecutive": false,
+            "window": false
+          }
+        },
+        {
+          "index": 10,
+          "time_ms": 1000,
+          "image": "frames/interrupted-crossing-10.png",
+          "dropped": false,
+          "detections": [
+            {
+              "x": 70,
+              "y": 65,
+              "width": 27,
+              "height": 48,
+              "area": 1296
+            }
+          ],
+          "policies": {
+            "consecutive": false,
+            "window": false
+          }
+        },
+        {
+          "index": 11,
+          "time_ms": 1100,
+          "image": "frames/interrupted-crossing-11.png",
+          "dropped": false,
+          "detections": [
+            {
+              "x": 74,
+              "y": 65,
+              "width": 27,
+              "height": 48,
+              "area": 1296
+            }
+          ],
+          "policies": {
+            "consecutive": false,
+            "window": false
+          }
+        }
+      ],
+      "policies": {
+        "consecutive": {
+          "triggered": false,
+          "trigger_time_ms": null
+        },
+        "window": {
+          "triggered": true,
+          "trigger_time_ms": 600
+        }
+      }
+    },
+    {
+      "id": "sustained-crossing",
+      "title": "A sustained intrusion both policies catch",
+      "truth": true,
+      "frames": [
+        {
+          "index": 0,
+          "time_ms": 0,
+          "image": "frames/sustained-crossing-00.png",
+          "dropped": false,
+          "detections": [
+            {
+              "x": 30,
+              "y": 65,
+              "width": 27,
+              "height": 48,
+              "area": 1296
+            }
+          ],
+          "policies": {
+            "consecutive": false,
+            "window": false
+          }
+        },
+        {
+          "index": 1,
+          "time_ms": 100,
+          "image": "frames/sustained-crossing-01.png",
+          "dropped": false,
+          "detections": [
+            {
+              "x": 34,
+              "y": 65,
+              "width": 27,
+              "height": 48,
+              "area": 1296
+            }
+          ],
+          "policies": {
+            "consecutive": false,
+            "window": false
+          }
+        },
+        {
+          "index": 2,
+          "time_ms": 200,
+          "image": "frames/sustained-crossing-02.png",
+          "dropped": false,
+          "detections": [
+            {
+              "x": 194,
+              "y": 65,
+              "width": 27,
+              "height": 48,
+              "area": 1296
+            }
+          ],
+          "policies": {
+            "consecutive": false,
+            "window": false
+          }
+        },
+        {
+          "index": 3,
+          "time_ms": 300,
+          "image": "frames/sustained-crossing-03.png",
+          "dropped": true,
+          "detections": [],
+          "policies": {
+            "consecutive": false,
+            "window": false
+          }
+        },
+        {
+          "index": 4,
+          "time_ms": 400,
+          "image": "frames/sustained-crossing-04.png",
+          "dropped": false,
+          "detections": [
+            {
+              "x": 194,
+              "y": 65,
+              "width": 27,
+              "height": 48,
+              "area": 1296
+            }
+          ],
+          "policies": {
+            "consecutive": false,
+            "window": false
+          }
+        },
+        {
+          "index": 5,
+          "time_ms": 500,
+          "image": "frames/sustained-crossing-05.png",
+          "dropped": true,
+          "detections": [],
+          "policies": {
+            "consecutive": false,
+            "window": false
+          }
+        },
+        {
+          "index": 6,
+          "time_ms": 600,
+          "image": "frames/sustained-crossing-06.png",
+          "dropped": false,
+          "detections": [
+            {
+              "x": 194,
+              "y": 65,
+              "width": 27,
+              "height": 48,
+              "area": 1296
+            }
+          ],
+          "policies": {
+            "consecutive": false,
+            "window": true
+          }
+        },
+        {
+          "index": 7,
+          "time_ms": 700,
+          "image": "frames/sustained-crossing-07.png",
+          "dropped": false,
+          "detections": [
+            {
+              "x": 194,
+              "y": 65,
+              "width": 27,
+              "height": 48,
+              "area": 1296
+            }
+          ],
+          "policies": {
+            "consecutive": false,
+            "window": true
+          }
+        },
+        {
+          "index": 8,
+          "time_ms": 800,
+          "image": "frames/sustained-crossing-08.png",
+          "dropped": false,
+          "detections": [
+            {
+              "x": 194,
+              "y": 65,
+              "width": 27,
+              "height": 48,
+              "area": 1296
+            }
+          ],
+          "policies": {
+            "consecutive": true,
+            "window": true
+          }
+        },
+        {
+          "index": 9,
+          "time_ms": 900,
+          "image": "frames/sustained-crossing-09.png",
+          "dropped": false,
+          "detections": [
+            {
+              "x": 194,
+              "y": 65,
+              "width": 27,
+              "height": 48,
+              "area": 1296
+            }
+          ],
+          "policies": {
+            "consecutive": true,
+            "window": true
+          }
+        },
+        {
+          "index": 10,
+          "time_ms": 1000,
+          "image": "frames/sustained-crossing-10.png",
+          "dropped": false,
+          "detections": [
+            {
+              "x": 194,
+              "y": 65,
+              "width": 27,
+              "height": 48,
+              "area": 1296
+            }
+          ],
+          "policies": {
+            "consecutive": true,
+            "window": true
+          }
+        },
+        {
+          "index": 11,
+          "time_ms": 1100,
+          "image": "frames/sustained-crossing-11.png",
+          "dropped": false,
+          "detections": [
+            {
+              "x": 194,
+              "y": 65,
+              "width": 27,
+              "height": 48,
+              "area": 1296
+            }
+          ],
+          "policies": {
+            "consecutive": true,
+            "window": true
+          }
+        }
+      ],
+      "policies": {
+        "consecutive": {
+          "triggered": true,
+          "trigger_time_ms": 800
+        },
+        "window": {
+          "triggered": true,
+          "trigger_time_ms": 600
+        }
+      }
+    },
+    {
+      "id": "brief-passage",
+      "title": "A brief passage below the event duration",
+      "truth": false,
+      "frames": [
+        {
+          "index": 0,
+          "time_ms": 0,
+          "image": "frames/brief-passage-00.png",
+          "dropped": false,
+          "detections": [
+            {
+              "x": 30,
+              "y": 65,
+              "width": 27,
+              "height": 48,
+              "area": 1296
+            }
+          ],
+          "policies": {
+            "consecutive": false,
+            "window": false
+          }
+        },
+        {
+          "index": 1,
+          "time_ms": 100,
+          "image": "frames/brief-passage-01.png",
+          "dropped": false,
+          "detections": [
+            {
+              "x": 34,
+              "y": 65,
+              "width": 27,
+              "height": 48,
+              "area": 1296
+            }
+          ],
+          "policies": {
+            "consecutive": false,
+            "window": false
+          }
+        },
+        {
+          "index": 2,
+          "time_ms": 200,
+          "image": "frames/brief-passage-02.png",
+          "dropped": false,
+          "detections": [
+            {
+              "x": 194,
+              "y": 65,
+              "width": 27,
+              "height": 48,
+              "area": 1296
+            }
+          ],
+          "policies": {
+            "consecutive": false,
+            "window": false
+          }
+        },
+        {
+          "index": 3,
+          "time_ms": 300,
+          "image": "frames/brief-passage-03.png",
+          "dropped": false,
+          "detections": [
+            {
+              "x": 194,
+              "y": 65,
+              "width": 27,
+              "height": 48,
+              "area": 1296
+            }
+          ],
+          "policies": {
+            "consecutive": false,
+            "window": false
+          }
+        },
+        {
+          "index": 4,
+          "time_ms": 400,
+          "image": "frames/brief-passage-04.png",
+          "dropped": false,
+          "detections": [
+            {
+              "x": 46,
+              "y": 65,
+              "width": 27,
+              "height": 48,
+              "area": 1296
+            }
+          ],
+          "policies": {
+            "consecutive": false,
+            "window": false
+          }
+        },
+        {
+          "index": 5,
+          "time_ms": 500,
+          "image": "frames/brief-passage-05.png",
+          "dropped": false,
+          "detections": [
+            {
+              "x": 50,
+              "y": 65,
+              "width": 27,
+              "height": 48,
+              "area": 1296
+            }
+          ],
+          "policies": {
+            "consecutive": false,
+            "window": false
+          }
+        },
+        {
+          "index": 6,
+          "time_ms": 600,
+          "image": "frames/brief-passage-06.png",
+          "dropped": false,
+          "detections": [
+            {
+              "x": 54,
+              "y": 65,
+              "width": 27,
+              "height": 48,
+              "area": 1296
+            }
+          ],
+          "policies": {
+            "consecutive": false,
+            "window": false
+          }
+        },
+        {
+          "index": 7,
+          "time_ms": 700,
+          "image": "frames/brief-passage-07.png",
+          "dropped": false,
+          "detections": [
+            {
+              "x": 58,
+              "y": 65,
+              "width": 27,
+              "height": 48,
+              "area": 1296
+            }
+          ],
+          "policies": {
+            "consecutive": false,
+            "window": false
+          }
+        },
+        {
+          "index": 8,
+          "time_ms": 800,
+          "image": "frames/brief-passage-08.png",
+          "dropped": false,
+          "detections": [
+            {
+              "x": 62,
+              "y": 65,
+              "width": 27,
+              "height": 48,
+              "area": 1296
+            }
+          ],
+          "policies": {
+            "consecutive": false,
+            "window": false
+          }
+        },
+        {
+          "index": 9,
+          "time_ms": 900,
+          "image": "frames/brief-passage-09.png",
+          "dropped": false,
+          "detections": [
+            {
+              "x": 66,
+              "y": 65,
+              "width": 27,
+              "height": 48,
+              "area": 1296
+            }
+          ],
+          "policies": {
+            "consecutive": false,
+            "window": false
+          }
+        },
+        {
+          "index": 10,
+          "time_ms": 1000,
+          "image": "frames/brief-passage-10.png",
+          "dropped": false,
+          "detections": [
+            {
+              "x": 70,
+              "y": 65,
+              "width": 27,
+              "height": 48,
+              "area": 1296
+            }
+          ],
+          "policies": {
+            "consecutive": false,
+            "window": false
+          }
+        },
+        {
+          "index": 11,
+          "time_ms": 1100,
+          "image": "frames/brief-passage-11.png",
+          "dropped": false,
+          "detections": [
+            {
+              "x": 74,
+              "y": 65,
+              "width": 27,
+              "height": 48,
+              "area": 1296
+            }
+          ],
+          "policies": {
+            "consecutive": false,
+            "window": false
+          }
+        }
+      ],
+      "policies": {
+        "consecutive": {
+          "triggered": false,
+          "trigger_time_ms": null
+        },
+        "window": {
+          "triggered": false,
+          "trigger_time_ms": null
+        }
+      }
+    },
+    {
+      "id": "reflected-flashes",
+      "title": "Repeated flashes expose a false alarm",
+      "truth": false,
+      "frames": [
+        {
+          "index": 0,
+          "time_ms": 0,
+          "image": "frames/reflected-flashes-00.png",
+          "dropped": false,
+          "detections": [
+            {
+              "x": 30,
+              "y": 65,
+              "width": 27,
+              "height": 48,
+              "area": 1296
+            }
+          ],
+          "policies": {
+            "consecutive": false,
+            "window": false
+          }
+        },
+        {
+          "index": 1,
+          "time_ms": 100,
+          "image": "frames/reflected-flashes-01.png",
+          "dropped": false,
+          "detections": [
+            {
+              "x": 194,
+              "y": 65,
+              "width": 27,
+              "height": 48,
+              "area": 1296
+            }
+          ],
+          "policies": {
+            "consecutive": false,
+            "window": false
+          }
+        },
+        {
+          "index": 2,
+          "time_ms": 200,
+          "image": "frames/reflected-flashes-02.png",
+          "dropped": false,
+          "detections": [
+            {
+              "x": 38,
+              "y": 65,
+              "width": 27,
+              "height": 48,
+              "area": 1296
+            }
+          ],
+          "policies": {
+            "consecutive": false,
+            "window": false
+          }
+        },
+        {
+          "index": 3,
+          "time_ms": 300,
+          "image": "frames/reflected-flashes-03.png",
+          "dropped": false,
+          "detections": [
+            {
+              "x": 194,
+              "y": 65,
+              "width": 27,
+              "height": 48,
+              "area": 1296
+            }
+          ],
+          "policies": {
+            "consecutive": false,
+            "window": false
+          }
+        },
+        {
+          "index": 4,
+          "time_ms": 400,
+          "image": "frames/reflected-flashes-04.png",
+          "dropped": false,
+          "detections": [
+            {
+              "x": 46,
+              "y": 65,
+              "width": 27,
+              "height": 48,
+              "area": 1296
+            }
+          ],
+          "policies": {
+            "consecutive": false,
+            "window": false
+          }
+        },
+        {
+          "index": 5,
+          "time_ms": 500,
+          "image": "frames/reflected-flashes-05.png",
+          "dropped": false,
+          "detections": [
+            {
+              "x": 194,
+              "y": 65,
+              "width": 27,
+              "height": 48,
+              "area": 1296
+            }
+          ],
+          "policies": {
+            "consecutive": false,
+            "window": true
+          }
+        },
+        {
+          "index": 6,
+          "time_ms": 600,
+          "image": "frames/reflected-flashes-06.png",
+          "dropped": false,
+          "detections": [
+            {
+              "x": 54,
+              "y": 65,
+              "width": 27,
+              "height": 48,
+              "area": 1296
+            }
+          ],
+          "policies": {
+            "consecutive": false,
+            "window": false
+          }
+        },
+        {
+          "index": 7,
+          "time_ms": 700,
+          "image": "frames/reflected-flashes-07.png",
+          "dropped": false,
+          "detections": [
+            {
+              "x": 58,
+              "y": 65,
+              "width": 27,
+              "height": 48,
+              "area": 1296
+            }
+          ],
+          "policies": {
+            "consecutive": false,
+            "window": false
+          }
+        },
+        {
+          "index": 8,
+          "time_ms": 800,
+          "image": "frames/reflected-flashes-08.png",
+          "dropped": false,
+          "detections": [
+            {
+              "x": 62,
+              "y": 65,
+              "width": 27,
+              "height": 48,
+              "area": 1296
+            }
+          ],
+          "policies": {
+            "consecutive": false,
+            "window": false
+          }
+        },
+        {
+          "index": 9,
+          "time_ms": 900,
+          "image": "frames/reflected-flashes-09.png",
+          "dropped": false,
+          "detections": [
+            {
+              "x": 66,
+              "y": 65,
+              "width": 27,
+              "height": 48,
+              "area": 1296
+            }
+          ],
+          "policies": {
+            "consecutive": false,
+            "window": false
+          }
+        },
+        {
+          "index": 10,
+          "time_ms": 1000,
+          "image": "frames/reflected-flashes-10.png",
+          "dropped": false,
+          "detections": [
+            {
+              "x": 70,
+              "y": 65,
+              "width": 27,
+              "height": 48,
+              "area": 1296
+            }
+          ],
+          "policies": {
+            "consecutive": false,
+            "window": false
+          }
+        },
+        {
+          "index": 11,
+          "time_ms": 1100,
+          "image": "frames/reflected-flashes-11.png",
+          "dropped": false,
+          "detections": [
+            {
+              "x": 74,
+              "y": 65,
+              "width": 27,
+              "height": 48,
+              "area": 1296
+            }
+          ],
+          "policies": {
+            "consecutive": false,
+            "window": false
+          }
+        }
+      ],
+      "policies": {
+        "consecutive": {
+          "triggered": false,
+          "trigger_time_ms": null
+        },
+        "window": {
+          "triggered": true,
+          "trigger_time_ms": 500
+        }
+      }
+    }
+  ],
+  "summary": {
+    "consecutive": {
+      "true_positives": 1,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "precision": 1.0,
+      "recall": 0.5
+    },
+    "window": {
+      "true_positives": 2,
+      "false_positives": 1,
+      "false_negatives": 0,
+      "precision": 0.6666666666666666,
+      "recall": 1.0
+    }
+  },
+  "provenance": {
+    "source": "Owned deterministic synthetic pixel fixtures; no external footage",
+    "fixture_version": "0.1",
+    "detector": "uint8 background difference + connected components",
+    "opencv": "5.0.0",
+    "detector_settings": {
+      "threshold": 45,
+      "min_area": 40
+    },
+    "pixels_sha256": "9c770053b737cdd298122a01feabb5a6451832c450e491bd5fffb61ae2fc9252",
+    "observations_sha256": "346c8082adff38df03cea29b374fe084cc05f5b10f8686829fa7a98062e13357",
+    "policies": {
+      "consecutive": "v1: 3 consecutive source frames",
+      "window": "v2: 3 observed zone hits within 500ms"
+    },
+    "ground_truth": "Independent authored event labels, excluded from detector input"
+  },
+  "limitations": [
+    "Synthetic fixtures demonstrate replay mechanics, not real-world vision accuracy.",
+    "The pixel detector has no semantic object understanding; flashes can cause false alarms.",
+    "Window tolerance recovers a dropped-frame event but introduces a false positive in this suite.",
+    "Four authored scenarios are not an independent statistical benchmark or safety validation.",
+    "Dropped frames are marked and not processed; replay does not model production queueing."
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "version": "0.1",
+  "method": "Single annotator manually inspected source JPEGs before detector inference. Boxes cover visible full bodies of people at least45pixels tall whose centers lie in the fixed ROI. Explicit ignored regions cover partial or heavily occluded people.",
+  "frame_size": {"width":640,"height":360},
+  "evaluation_roi":{"x":240,"y":160,"width":150,"height":200},
+  "min_height":45,
+  "frames":[
+    {"time_ms":0,"split":"development","boxes":[[287,211,327,329],[345,204,388,299]],"ignored_regions":[]},
+    {"time_ms":1000,"split":"development","boxes":[[281,214,308,319],[339,208,373,299]],"ignored_regions":[]},
+    {"time_ms":2000,"split":"development","boxes":[[336,206,370,284]],"ignored_regions":[[200,224,300,360],[257,205,297,290]]},
+    {"time_ms":3000,"split":"development","boxes":[[337,207,365,278]],"ignored_regions":[[267,220,337,360],[257,213,283,290]]},
+    {"time_ms":10000,"split":"test","boxes":[[251,236,274,294],[278,243,310,339],[304,233,332,310]],"ignored_regions":[[289,225,310,277]]},
+    {"time_ms":11000,"split":"test","boxes":[[251,230,271,285],[286,235,317,320],[313,228,341,296]],"ignored_regions":[[297,223,312,270]]},
+    {"time_ms":12000,"split":"test","boxes":[[251,229,271,282],[289,232,318,309],[342,230,366,286]],"ignored_regions":[[297,225,321,280]]},
+    {"time_ms":13000,"split":"test","boxes":[[255,227,274,274],[291,228,319,299],[368,224,392,280]],"ignored_regions":[[297,222,317,269]]}
+  ]
+}

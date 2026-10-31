@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "perception-replay"
+version = "0.1"
+description = "Recorded vision incidents with controlled fixtures and pretrained real-video comparison"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.24,<3", "opencv-python>=4.8,<6"]
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+real = ["torch>=2.6,<3", "torchvision>=0.21,<1"]
+[tool.setuptools.packages.find]
+where = ["src"]
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
